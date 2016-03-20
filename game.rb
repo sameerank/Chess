@@ -51,7 +51,7 @@ class Game
 
 
   def notify_check
-    puts "CHECK, MOFUCKAAAHHH"
+    puts "CHECK!"
     sleep(2)
   end
 
@@ -99,7 +99,7 @@ class Game
         new_board = dup_board
         new_board.move!(@pos, new_pos, selected_piece)
         if board_in_check?(new_board, @curr_player.color)
-          puts "That would put you in check. Think againnnn!"
+          puts "That would put you in check. Think again!"
           sleep(2)
         else
           @board.move!(@pos, new_pos, selected_piece)
